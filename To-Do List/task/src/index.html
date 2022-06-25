@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>To-Do List</h1>
+    <div id="input-task-group">
+        <label for="input-task" id="input-task-label"></label>
+        <input type="text" id="input-task" placeholder="Task">
+    </div>
+    <button id="add-task-button">Add Task</button>
+</header>
+<ul id="task-list">
+    <li>
+        <label><input type="checkbox" class="task-checkbox"></label>
+        <span class="task">flexbox</span>
+        <button class="delete-btn"><img src="x.webp" alt="delete"></button>
+    </li>
+    <li>
+        <label><input type="checkbox" class="task-checkbox"></label>
+        <span class="task">Color scheme</span>
+        <button class="delete-btn"><img src="x.webp" alt="delete"></button>
+    </li>
+    <li>
+        <label><input type="checkbox" class="task-checkbox"></label>
+        <span class="task">Font family</span>
+        <button class="delete-btn"><img src="x.webp" alt="delete"></button>
+    </li>
+</ul>
+</body>
+</html>

@@ -144,6 +144,134 @@ files:
         await new TodoTest().runTests()
     }, 30000)
   learner_created: false
+- name: src/style.css
+  visible: true
+  text: |-
+    body {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        font-family: smooch, sans-serif;
+    }
+
+    header {
+        min-width: 30em;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    header h1 {
+        color: #471199;
+        width: 100%;
+        text-align: center;
+    }
+
+    #input-task-group {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: center;
+        background: #222222;
+    }
+
+    #input-task {
+        padding: 5px 0;
+        border: none;
+        border-bottom: 2px solid gray;
+        outline: 0;
+        transition: border-color 0.2s;
+
+        min-width: 20vw;
+        align-self: flex-end;
+    }
+
+    #input-task:focus::placeholder {
+        color: transparent;
+    }
+
+    #input-task::placeholder {
+        font-size: 24px;
+        color: white;
+    }
+
+    #input-task:focus {
+        border-image: linear-gradient(to right, #471199, #bb38ef) 1;
+    }
+
+    #add-task-button {
+        align-self: flex-end;
+        margin-left: 1em;
+        min-width: 6em;
+        min-height: 3em;
+        background-image: linear-gradient(to right, #471199, #bb38ef);
+        border-image: linear-gradient(to right, #bb38ef, #471199) 1;
+        border-radius: 5px;
+    }
+
+    #add-task-button:hover {
+        background-image: linear-gradient(to right, #bb38ef, #471199);
+        border-image: linear-gradient(to right, #471199, #bb38ef) 1;
+    }
+
+    #tasks-list {
+        width: 30em;
+        margin: 2em;
+        align-self: center;
+
+        padding: 0;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        list-style: none;
+    }
+
+    #tasks-list li {
+        margin: 0.5em;
+        list-style: none;
+        display: flex;
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+
+    .task {
+        margin-left: 0.5em;
+        min-width: 20vw;
+        width: 20vw;
+    }
+
+    .delete-btn {
+        border: none;
+        background: transparent;
+    }
+
+    .delete-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .delete-btn img:hover {
+        width: 18px;
+        height: 18px;
+    }
+
+    .delete-btn img:active {
+        width: 16px;
+        height: 16px;
+    }
+  learner_created: true
+- name: src/script.js
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/13195#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 25 Jun 2022 22:39:19 UTC
 record: -1

@@ -40,7 +40,6 @@ function creatTaskObject(task) {
 }
 
 function saveTasks() {
-    debugger;
     let tasks = tasksList.children;
     let tasksArray = new Array(tasks.length);
 
@@ -53,7 +52,6 @@ function saveTasks() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    debugger;
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     if (tasks === []) {
         return;

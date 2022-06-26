@@ -97,6 +97,11 @@ header h1 {
     width: 20vw;
 }
 
+.done-task {
+    color: gray;
+    text-decoration: line-through;
+}
+
 .delete-btn {
     border: none;
     background: transparent;
@@ -115,4 +120,9 @@ header h1 {
 .delete-btn img:active {
     width: 16px;
     height: 16px;
+}
+
+.task-checkbox:checked + span {
+    color: gray;
+    text-decoration: line-through;
 }

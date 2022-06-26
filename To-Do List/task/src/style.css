@@ -20,15 +20,6 @@ header h1 {
     text-align: center;
 }
 
-#input-task-group {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: center;
-    background: #222222;
-}
-
 #input-task {
     padding: 5px 0;
     border: none;
@@ -47,9 +38,13 @@ header h1 {
 #input-task::placeholder {
     font-size: 24px;
     color: white;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
 }
 
 #input-task:focus {
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
     border-image: linear-gradient(to right, #471199, #bb38ef) 1;
 }
 
@@ -68,33 +63,38 @@ header h1 {
     border-image: linear-gradient(to right, #471199, #bb38ef) 1;
 }
 
-#tasks-list {
-    width: 30em;
+#task-list {
+    width: 60em;
     margin: 2em;
     align-self: center;
 
-    padding: 0;
+    padding:0;
 
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content:  center;
+    align-items:  center;
 
     list-style: none;
+
 }
 
 #task-list li {
     margin: 0.5em;
     list-style: none;
     display: flex;
-    align-self: flex-start;
-    justify-self: flex-start;
+    align-self: center;
+    justify-self: center;
+
 }
 
 .task {
     margin-left: 0.5em;
-    min-width: 20vw;
-    width: 20vw;
+    min-width: 50vw;
+    width: 50vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .done-task {
@@ -121,6 +121,7 @@ header h1 {
     width: 16px;
     height: 16px;
 }
+
 
 .task-checkbox:checked + span {
     color: gray;
